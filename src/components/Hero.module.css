@@ -1,0 +1,185 @@
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+  margin: 0;
+}
+
+.highlight {
+  color: var(--primary-blue);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #ffffff;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.iconLink:hover {
+  color: var(--primary-blue);
+  transform: translateY(-3px);
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.fiverrIcon {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
+
+.iconLink:hover .fiverrIcon {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 304px;
+  height: 304px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid var(--primary-blue);
+  box-shadow: 
+    0 0 30px rgba(59, 130, 246, 0.3),
+    0 0 60px rgba(59, 130, 246, 0.15);
+}
+
+.profileImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 968px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .imageWrapper {
+    order: -1;
+  }
+  
+  .imageContainer {
+    width: 253px;
+    height: 253px;
+    margin: 0 auto;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 2rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+  
+  .imageContainer {
+    width: 228px;
+    height: 228px;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .description {
+    font-size: 1.125rem;
+  }
+  
+  .socialIcons {
+    gap: 1rem;
+  }
+  
+  .iconLink {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .fiverrIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
+

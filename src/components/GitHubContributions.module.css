@@ -1,0 +1,78 @@
+.section {
+  padding: 2rem 0 4rem;
+  background: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.titleIcon {
+  color: var(--primary-blue);
+  font-size: 1.75rem;
+}
+
+.calendarWrapper {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.3) transparent;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  width: 100%;
+  min-width: 0;
+}
+
+.calendarWrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.calendarWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.calendarWrapper::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.3);
+  border-radius: 3px;
+}
+
+.calendarWrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .section {
+    padding: 1.5rem 0 3rem;
+  }
+  
+  .calendarWrapper {
+    padding: 0.75rem;
+  }
+}
+
