@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import LatestBlogPosts from '@/components/LatestBlogPosts';
+import FeaturedProjects from '@/components/FeaturedProjects';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <LatestBlogPosts />
+      <FeaturedProjects />
     </div>
   );
 }

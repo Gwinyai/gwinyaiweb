@@ -76,7 +76,7 @@ export default async function LatestBlogPosts() {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Latest Blog Posts</h2>
+          <h3 className={styles.title}>Blog</h3>
           <Link href="/blog" className={styles.viewAll}>
             View All <FaArrowRight />
           </Link>

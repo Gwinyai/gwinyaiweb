@@ -13,7 +13,7 @@ export default function Hero() {
             NextJS | React | NodeJS | iOS Swift
           </p>
           <p className={styles.description}>
-            I craft AI, web and mobile app solutions. Use this page to learn more about my journey.  
+            I am an indie developer who crafts AI, web and mobile app solutions. This is the page where I get to rant about the things I build.  
           </p>
           <div className={styles.socialIcons}>
             <a href="https://github.com/Gwinyai" target="_blank" rel="noopener noreferrer" className={styles.iconLink} aria-label="GitHub">
